@@ -1,0 +1,642 @@
+/* -------- # START A STYLing ---------------------- */
+* {
+    margin: auto;
+}
+
+body {
+    margin: 0%;
+    padding: 0;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------- # STYLING in NAVIGATION - MENU ------------------ */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    width: 85%;
+    margin: 0px 126px;
+    padding: 35px 0;
+    position: sticky;
+}
+
+.navbar h1 {
+    text-transform: uppercase;
+    color: rgb(236, 233, 233);
+    text-shadow: rgb(212, 70, 34);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: rgb(255, 0, 106);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+
+/* ------- # STYLING IN HOME - PAGE - CONTENT ------------- */
+.content {
+    position: relative;
+    width: 40%;
+    margin-left: 8%;
+    position: absolute;
+    top: 20%;
+    text-align: left;
+    color: #fff;
+}
+
+.font-img {
+    width: 40%;
+    height: 75vh;
+    background-image: url(images/font-img.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 60;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 200;
+    line-height: 30px;
+    font-family: fantasy;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+.content-btn {
+    margin-top: 5%;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background-color: #07a013;
+    border: none;
+    cursor: pointer;
+}
+
+.content-btn:hover {
+    color: black;
+    background-color: rgba(255, 238, 0, 0.925);
+    border-radius: 5%;
+}
+
+/* -------- # STYLING IN WELCOME - PAGE ------------------- */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 90px 0px;
+}
+
+h1 {
+    font-size: 350%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-para {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0px;
+}
+
+.about-para p {
+    width: 67%;
+    text-transform: capitalize;
+    font-size: 150%;
+    color: grey;
+}
+
+.about-para img {
+    height: 180px;
+    width: 180px;
+    margin: 0px 0px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin: -20px 33px;
+}
+
+.sec1 h3 {
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: bold;
+    padding: 30px;
+    margin: -26px 0px;
+}
+
+.sec1 p {
+    width: 60%;
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 201px 201px 201px 201px 201px;
+    grid-template-rows: 425px 242px;
+    grid-gap: 2px;
+    background-color: grey;
+    margin: 40px 192px;
+    /* margin-left: 330px; */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 27px 0px;
+}
+
+.grid-item h3 {
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.grid-item p {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 40px;
+    text-align: left;
+}
+
+.grid-item:hover {
+    background-color: rgb(175, 217, 233);
+}
+
+.section-btn {
+    margin-top: 5%;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(208, 221, 91);
+    border: none;
+    cursor: pointer;
+}
+
+.section-btn:hover {
+    background-color: #4bbb0a;
+    color: white;
+}
+
+/* ------- # STYLING IN PRICING SECTION -------------------- */
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    flex-direction: column;
+}
+
+.price-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    margin: 50px 20px 20px 20px ;
+}
+
+.price-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin: 20px 33px;
+}
+
+.price-sec h2 {
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: bold;
+    padding: 30px 0px;
+    margin: -26px 0px;
+    text-align: center;
+}
+
+.price-sec h3 {
+    color: grey;
+    margin: 10px;
+}
+
+.price-sec p {
+    width: 60%;
+    color: rgb(78, 72, 72);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    white-space: 5px;
+    padding: 10px;
+}
+
+.vl {
+    border-left: 3px solid grey;
+    height: 245px;
+    margin: 0px;
+}
+
+/*.video-section {
+    background-color: #623b8c;
+    color: white;
+    height: 70%;
+    width: 100%;
+}
+
+.video-section h1 {
+    text-align: center;
+    padding-top: 87px;
+}
+
+.videos-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.video p {
+    padding: 13px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: monospace;
+}*/
+
+iframe {
+    width: 350px;
+    height: 250px;
+}
+
+/* --------- # STYLING IN TEAM ----------------------------- */
+#team {
+    margin: 40px;
+}
+
+#team h1 {
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 60%;
+    margin-top: 30px;
+}
+
+.member {
+    margin: 5px 20px;
+    position: relative;
+    background-color: #444;
+    box-shadow: 1px 2px 10px #444;
+    transition: all 0.9s ease;
+    overflow: hidden;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding-right: 1.4em;
+    background-color: rebeccapurple;
+    opacity: 0.7;
+    transform: translate(400px);
+    transition: transform 0.8s ease;
+}
+
+.social-icons a {
+    margin-top: 45%;
+    padding: 0px 13px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: lightcoral;
+}
+
+.member:hover .social-icons {
+    transform: translate(0px);
+}
+
+.member:hover img {
+    mix-blend-mode: soft-light;
+    transform: scale(1.2);
+}
+
+.member img {
+    height: 200px;
+    width: 200px;
+}
+
+.team-detail h3 {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.team-detail h4 {
+    color: rgb(78, 72, 72);
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.life {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: #d3cbcb; */
+    width: 100%;
+}
+
+.life h1 {
+    margin-top: 100px;
+}
+
+.slides {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    width: 45%;
+    height: 80vh;
+    border: 4px solid black;
+    box-shadow: 10px 10px 10px 10px rgb(136, 140, 240);
+}
+
+#slide {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------- # STYLING IN NEWSLETTER -------------------------------- */
+.news {
+    width: 100%;
+    height: 40vh;
+    background-image: url(images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter h1 {
+    color: white;
+    margin-top: 70px;
+}
+
+.input-box {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 20px;
+}
+
+.input-box input {
+    padding: 15px 15px;
+    width: 50%;
+    margin-right: 0%;
+    font-size: 20px;
+    color: rgb(53, 49, 49);
+    font-family: monospace;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.input-box button {
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* ---------- # STYLING IN BLOG ----------------------------------- */
+.blog {
+    display: flex;
+    margin: 50px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog img {
+    width: 250px;
+    height: 260px;
+    margin: 10px 0px;
+}
+
+.sec1 h3{
+    text-align: center;
+    /* padding: 25px; */
+    /* margin: 0px 20px; */
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: red;
+}
+
+.blog h5 {
+    margin: 10px;
+    color: grey;
+    font: bold;
+    font-size: 20px;
+}
+
+.blog p {
+    color: rgb(37, 34, 34);
+    font-size: 15px;
+}
+
+/* -------- # STYLING IN CONTACT -------------------------- */
+.contact-in {
+    width: auto;
+    height: 70%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+    background-color: rgb(224, 224, 221);
+}
+
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contact-form {
+    height: auto;
+    float: right;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-form h1 {
+    margin-bottom: 10px;
+}
+
+.contact-form-txt {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #bcbcbc;
+    border-radius: 15px 0px 15px 0px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+}
+
+.contact-form-txt::placeholder {
+    color: #aaa;
+}
+
+.contact-form-textarea {
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 25px 0px 25px 0px;
+    outline: none;
+    margin-bottom: 20px;
+    border: none;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: #8e2de2;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* -------- # STYLING IN FOOTER ------------------------------- */
+.footer {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-element h3 {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.footer-element p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.follow a {
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.follow a:hover {
+    color: lightcoral;
+}
